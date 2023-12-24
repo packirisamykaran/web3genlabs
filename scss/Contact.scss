@@ -1,0 +1,142 @@
+@import "./App.scss";
+
+.contact {
+    margin-top: 2rem;
+    color: white;
+
+    .container {
+        width: 95%;
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        border-radius: 10px;
+        overflow: hidden;
+
+
+        .heading {
+            font-size: 2rem;
+            font-weight: 600;
+
+        }
+
+        .contact-info {
+            background-color: rgb(23, 23, 23);
+            width: 50%;
+            padding: 1rem;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+
+
+            .info-container {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+
+
+
+                .icon-info {
+                    display: flex;
+                    gap: 0.5rem;
+                    align-items: center;
+
+                    a {
+                        color: white;
+                    }
+
+                }
+
+
+            }
+        }
+
+        .contact-us {
+            background-color: black;
+            width: 50%;
+            padding: 1rem;
+
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+
+            .form {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+
+
+                input,
+                textarea {
+                    background-color: black;
+                    border: none;
+                    border-bottom: 1px solid gray;
+                    outline: none;
+                    color: white;
+                    padding: 1rem 0.5rem;
+                }
+
+                .wrapper {
+
+                    padding: 2px;
+                    // border: 2px solid;
+                    width: fit-content;
+                    background: linear-gradient(93.98deg, #AF84F8 -2.9%, #57F7D1 106.32%);
+
+                    border-radius: 47px;
+                    margin: 0 auto;
+                    margin-top: 2rem;
+                    cursor: pointer;
+
+                    button {
+                        padding: 0.5rem 2rem;
+                        background: $grey;
+                        color: white;
+                        border-radius: 47px;
+                        cursor: pointer;
+                        outline: none;
+                        border: none;
+                        font-size: 1.2rem;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:700px) {
+
+    .contact {
+        .container {
+            flex-direction: column;
+            align-items: stretch;
+
+            .heading {
+                font-size: 1.5rem;
+            }
+
+            .contact-info,
+            .contact-us {
+                width: 100%;
+
+            }
+
+            .contact-info {
+                padding: 4rem 0;
+            }
+
+            .contact-us {
+                padding: 2rem;
+            }
+
+
+        }
+    }
+
+}

@@ -1,0 +1,60 @@
+.team .container {
+  max-width: 900px;
+  padding: 2rem;
+  margin: 0 auto;
+  width: 90%;
+  background: rgb(23, 23, 23);
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+.team .container .heading {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+}
+.team .container .members {
+  display: flex;
+  margin-top: 1rem;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+}
+.team .container .members .member {
+  width: 30%;
+}
+.team .container .members .member .wrapper {
+  padding: 2px;
+  padding-bottom: 0px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: linear-gradient(93.98deg, #AF84F8 -2.9%, #57F7D1 106.32%);
+  border-radius: 10px;
+}
+.team .container .members .member .pic {
+  width: 100%;
+  border-radius: 10px;
+}
+.team .container .members .member .name {
+  color: white;
+  margin: 0 auto;
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .team .container .heading {
+    font-size: 1.5rem;
+  }
+  .team .container .members .member .wrapper {
+    border-radius: 10px;
+  }
+  .team .container .members .member .pic {
+    border-radius: 10px;
+  }
+  .team .container .members .member .name {
+    font-size: 1rem;
+  }
+}

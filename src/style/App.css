@@ -1,0 +1,85 @@
+/* SCSS HEX */
+/* SCSS HSL */
+/* SCSS RGB */
+/* SCSS Gradient */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.App {
+  padding-bottom: 3rem;
+}
+.App .wrapper > *:hover {
+  transform: rotateX("360deg");
+}
+.App .roadmap {
+  display: block;
+  width: 90%;
+  margin: 2rem auto;
+  max-width: 700px;
+  margin-inline: auto;
+}
+.App #app-bg {
+  background-color: #232123;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -2;
+}
+.App .gradient {
+  background: linear-gradient(101.12deg, #34A0BD 7.21%, #6094E7 48.99%, #F3508B 95.47%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.App .cs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(23, 23, 23);
+}
+.App .cs h1 {
+  position: relative;
+  font-size: 10vw;
+  color: #252839;
+  -webkit-text-stroke: 0.3vw #383d52;
+  text-transform: uppercase;
+}
+.App .cs h1::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #802bff;
+  -webkit-text-stroke: 0vw #383d52;
+  border-right: 2px solid #802bff;
+  overflow: hidden;
+  -webkit-animation: animate 6s linear infinite;
+          animation: animate 6s linear infinite;
+}
+@-webkit-keyframes animate {
+  0%, 10%, 100% {
+    width: 0;
+  }
+  70%, 90% {
+    width: 100%;
+  }
+}
+@keyframes animate {
+  0%, 10%, 100% {
+    width: 0;
+  }
+  70%, 90% {
+    width: 100%;
+  }
+}

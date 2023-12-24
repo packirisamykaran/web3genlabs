@@ -1,0 +1,55 @@
+@import "./App.scss";
+
+.navbar {
+
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    // background: green;
+    justify-content: flex-end;
+    // color: $gradient-color;
+
+    a {
+        color: $slate-blue;
+        text-decoration: none;
+        font-weight: 600;
+        // width: 0;
+        // height: 0;
+
+    }
+
+    .hamburg {
+        width: 70px;
+        height: 70px;
+        filter: invert(1);
+    }
+
+    .logo {
+        width: 80px;
+        // padding: 2rem;
+        // background: green;
+        // background: green;
+    }
+}
+
+
+@media (max-width:700px) {
+    .navbar {
+
+        // padding: 1rem 0.5rem;
+        padding: 1rem;
+
+        a {
+            font-size: 0.9rem;
+        }
+
+        // .logo {
+
+        // }
+
+        .logo {
+            width: 50px;
+        }
+
+    }
+}

@@ -1,0 +1,82 @@
+.about {
+    margin-top: 4rem;
+    max-width: 1200px;
+    margin-inline: auto;
+
+    .container {
+        padding: 2rem 15%;
+
+        .section {
+            h1 {
+                font-size: 3rem;
+                text-transform: capitalize;
+
+            }
+
+            p {
+                color: #909090;
+                margin-top: 1rem;
+                font-size: 1.5rem;
+            }
+        }
+
+        .section-icon {
+
+            margin-top: 6rem;
+
+
+            display: flex;
+            flex-direction: column;
+            row-gap: 4rem;
+
+            .item {
+
+                display: flex;
+                gap: 10%;
+                align-items: flex-start;
+
+                .section {
+                    width: 75%;
+                }
+
+                .icon {
+                    width: 25%;
+                    height: auto;
+                }
+            }
+
+        }
+
+
+    }
+}
+
+
+@media (max-width:700px) {
+    .about {
+        .container {
+            .section {
+                h1 {
+                    font-size: 1.5rem;
+                    text-transform: capitalize;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+            .section-icon {
+                .item {
+
+                    .section {}
+
+                    .icon {}
+                }
+
+            }
+
+
+        }
+    }
+}

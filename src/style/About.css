@@ -1,0 +1,45 @@
+.about {
+  margin-top: 4rem;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+.about .container {
+  padding: 2rem 15%;
+}
+.about .container .section h1 {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+.about .container .section p {
+  color: #909090;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+.about .container .section-icon {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+}
+.about .container .section-icon .item {
+  display: flex;
+  gap: 10%;
+  align-items: flex-start;
+}
+.about .container .section-icon .item .section {
+  width: 75%;
+}
+.about .container .section-icon .item .icon {
+  width: 25%;
+  height: auto;
+}
+
+@media (max-width: 700px) {
+  .about .container .section h1 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+  }
+  .about .container .section p {
+    font-size: 1rem;
+  }
+}
